@@ -1,155 +1,67 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
     <title>Bitjini.com by poojapauskar</title>
-
-<style>
-#dropnav 
-{height:0px; color:#BDB76B;} /* Changes the height and bg color of the main menu */
-
-#dropnav ul
-{margin:0px; padding:0px;}
-
-#dropnav ul li
-{display:inline; float:left; list-style:none; margin-left:15px; position:relative; height:25px; width: 150px;} /* only edit the last 2 items - sets the width of the main menu */
-
-#dropnav li a
-{color:#FFF; text-decoration:none;} /* Changes the link color of items on the main menu */
-
-#dropnav li a:hover
-{color:#000; text-decoration:none;}/* Changes the hover color of items on the main menu */
-
-#dropnav li ul
-{margin:0px; padding:0px; display:none; position:absolute; left:0px; z-index: 99; top:25px; background-color:#CCC;} /* Only edit the last 2 items - set the top margin and background color of the submenus */
-
-#dropnav li:hover ul
-{display:block; width:150px;} /* sets the width of the submenus */
-
-#dropnav li li
-{list-style:none; display:list-item;} /* DO NOT EDIT */
-
-#dropnav li li a
-{color:#000; text-decoration:none;} /* Changes the link color of items in the submenu */
-
-#dropnav li li a:hover
-{color:#000; text-decoration:none;} /* Changes the hover color of items in the submenu */
-  li#main  {padding-top: 2px;} /* Sets the padding of items in the main menu */
-</style>
   </head>
 
   <body>
+
     <header>
-      <div class="inner">
+      <div class="container">
         <h1>Bitjini.com</h1>
         <h2></h2>
-        <div id="centernav">
-    <div id="dropnav">
-<ul>
 
-            <li id="main">
-            <a href="#">Home</a>
-
-            </li>
-
-            <li id="main">
-            <a href="#">Services</a>
-                <ul>
-                      <li><a href="#">Web Development</a></li>
-                  <li><a href="#">Mobile Applications</a>
-                </li></ul>            
-            </li>
-
-            <li id="main">
-            <a href="#">Company</a>
-                <ul id="subnav">
-                      <li><a href="#">About</a></li>
-                      <li><a href="#">Team</a></li>
-                </ul>            
-            </li>
-
-            <li id="main">
-            <a href="#">Contact Us</a>
-           
-            </li>
-
-        </ul>
-  </div>
-
-
-<div>
-<img id="myImage" onload="setInterval(function () {changeImage()},500);" src="image3.jpg" width="800" height="180">
-
-
-
-<script>
-function changeImage() {
-    var image = document.getElementById('myImage');
-    if (image.src.match("image3.jpg")) {
-        image.src = "image4.jpg";
-    } else {
-        image.src = "image3.jpg";
-    }
-}
-</script>
-
+        <section id="downloads">
+          <a href="https://github.com/poojapauskar/bitroot.com/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/poojapauskar/bitroot.com/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/poojapauskar/bitroot.com" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
       </div>
     </header>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h3>
+    <div class="container">
+      <section id="main_content">
+        <h3>
 <a id="welcome-to-bitjini" class="anchor" href="#welcome-to-bitjini" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to BITJINI.</h3>
 
-<p>Bitjini offers a wide spectrum of web development services that range from simple website hosting, logo design to beautiful commercial ERP website, Web Application, Special Effect video presentation.
+<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
 
-We take professional attitude to work on all the components of a website construction, and deliver beautiful usable websites, the websites developed ensured to go with standard web compliance.
+<pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages
+</code></pre>
 
-</p>
+<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
 
+<h3>
+<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
 
-<p>The website are fine tuned to achieve client's business goals and successfully run their internet strategy. Making them Award Winner among the competitors</p>
+<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
 
+<h3>
+<a id="rather-drive-stick" class="anchor" href="#rather-drive-stick" aria-hidden="true"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
 
+<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
 
-<h3 id=hd>Advantages of hosting at Bitjini</h3>
+<h3>
+<a id="authors--contributors" class="anchor" href="#authors--contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors &amp; Contributors</h3>
 
-<ul>
-			<li>Well planned Web Design</li>
-			<li>Fine tuned Usable Website</li>
-			<li>Generate Business leads</li>
-			<li>Brand awareness with graphic media work</li>
-			<li>Robust Hosting service</li>
-</ul>       
-</section>
+<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
 
-        <aside id="sidebar">
-          <a href="https://github.com/poojapauskar/bitjini.com/zipball/master" class="button">
-            <small>Why</small>
-            Belgaum
-          </a>
-          <a href="https://github.com/poojapauskar/bitjini.com/tarball/master" class="button">
-            <small>Opportunities at</small>
-            Bitjini
-          </a>
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
 
-          
-        </aside>
-      </div>
+<p>Having trouble with Pages? Check out the documentation at <a href="https://help.github.com/pages">https://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+      </section>
     </div>
 
-  
+    
   </body>
 </html>
